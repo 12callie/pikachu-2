@@ -141,6 +141,7 @@ var player = {
     events: {
         '.btnPause': 'pause',
         '.btnPlay': 'playEvent',
+        '.btnReplay': 'replay',
         '.btnSlow': 'slow',
         '.btnNormal': 'normal',
         '.btnFast': 'fast'
@@ -163,6 +164,11 @@ var player = {
     },
     playEvent: function playEvent() {
         player.pause();
+        player.play();
+    },
+    replay: function replay() {
+        player.pause();
+        player.n = 1;
         player.play();
     },
     slow: function slow() {
@@ -192,4 +198,4 @@ var player = {
 
 player.init();
 },{"./css.js":"K4Xi"}]},{},["HdJB"], null)
-//# sourceMappingURL=test.85a154a9.map
+//# sourceMappingURL=test.d46caf75.map

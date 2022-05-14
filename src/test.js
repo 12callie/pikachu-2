@@ -18,6 +18,7 @@ const player = {
     events: { 
         '.btnPause': 'pause',
         '.btnPlay': 'playEvent',
+        '.btnReplay': 'replay',
         '.btnSlow': 'slow',
         '.btnNormal': 'normal',
         '.btnFast': 'fast'
@@ -40,6 +41,11 @@ const player = {
     },
     playEvent: ()=>{
         player.pause()
+        player.play()
+    },
+    replay:()=>{
+        player.pause()
+        player.n = 1
         player.play()
     },
     slow: ()=>{
@@ -69,23 +75,3 @@ const player = {
 
 
 player.init()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
